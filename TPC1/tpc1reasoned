@@ -1,0 +1,555 @@
+@prefix : <http://www.semanticweb.org/xekster/ontologies/2020/1/tpc1reasoned#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/xekster/ontologies/2020/1/tpc1reasoned> .
+
+<http://www.semanticweb.org/xekster/ontologies/2020/1/tpc1reasoned> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> rdf:type owl:ObjectProperty ;
+                                                                   owl:inverseOf <http://www.semanticweb.org/xekster/ontologies/2020/UCS#éFrequentadaPor> ;
+                                                                   rdfs:domain <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ;
+                                                                   rdfs:range <http://www.semanticweb.org/xekster/ontologies/2020/UCS#UC> .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#leciona
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#leciona> rdf:type owl:ObjectProperty ;
+                                                                 owl:inverseOf <http://www.semanticweb.org/xekster/ontologies/2020/UCS#éLecionadaPor> ;
+                                                                 rdfs:domain <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Professor> ;
+                                                                 rdfs:range <http://www.semanticweb.org/xekster/ontologies/2020/UCS#UC> .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#éFrequentadaPor
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#éFrequentadaPor> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#éLecionadaPor
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#éLecionadaPor> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#curso
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#curso> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#email
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#Professor
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#Professor> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#UC
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#UC> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A33524
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A33524> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A33524@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A33524"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Pedro Paes"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A61032
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A61032> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A61032@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A61032"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Tiago Pereira"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A63129
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A63129> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A63129@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A63129"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "José Freitas"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A67713
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A67713> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A67713@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A67713"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Manuel Moreno"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A70922
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A70922> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A70922@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A70922"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Francisco Costa"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A71385
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A71385> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A71385@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A71385"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Bruno Silva"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A71940
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A71940> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A71940@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A71940"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Eduardo Cunha"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A72187
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A72187> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A72187@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A72187"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "José Lima"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74036
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74036> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A74036@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A74036"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Manuel Monteiro"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74264
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74264> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A74264@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A74264"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Rafael Silva"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74568
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74568> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A74568@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A74568"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Ricardo Canela"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74658
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74658> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A74658@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A74658"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Rui Vieira"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75328
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75328> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A75328@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A75328"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Tiago Baptista"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75411
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75411> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A75411@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A75411"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Ricardo Leal"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75536
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75536> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A75536@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A75536"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Eduardo Araújo"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75569
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75569> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A75569@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A75569"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "João Leal"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A76516
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A76516> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A76516@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A76516"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "João Vieira"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A77045
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A77045> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A77045@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A77045"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Ricardo Pereira"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A78764
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A78764> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A78764@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A78764"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Ricardo Neves"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A78914
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A78914> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A78914@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A78914"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Ricardo Martins"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A78997
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A78997> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A78997@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A78997"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Bruno Sousa"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A79947
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A79947> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A79947@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A79947"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Rui Costa"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A80424
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A80424> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A80424@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A80424"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "José Carvalho"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A80757
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A80757> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A80757@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A80757"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Jaime Leite"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A80874
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A80874> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A80874@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A80874"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "João Pimentel"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A81712
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A81712> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A81712@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A81712"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Ana Filipa Pereira"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A82324
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A82324> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A82324@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A82324"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Carlos Barbosa"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#A82617
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#A82617> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                         <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                   <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "A82617@alunos.uminho.pt"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "A82617"^^xsd:string ;
+                                                                <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Shahzod Yusupov"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG17918
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG17918> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                          <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                    <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "PG17918@alunos.uminho.pt"^^xsd:string ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "PG17918"^^xsd:string ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Paulo Martins"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG33874
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG33874> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                          <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                    <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "PG33874@alunos.uminho.pt"^^xsd:string ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "PG33874"^^xsd:string ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "João Grenhas"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG37149
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG37149> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                          <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                    <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "PG37149@alunos.uminho.pt"^^xsd:string ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "PG37149"^^xsd:string ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Diego Silva"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG38415
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG38415> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                          <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                    <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "PG38415@alunos.uminho.pt"^^xsd:string ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "PG38415"^^xsd:string ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Henrique Ribeiro"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG39292
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG39292> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                          <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                    <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "PG39292@alunos.uminho.pt"^^xsd:string ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "PG39292"^^xsd:string ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Maria Pinto"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG41089
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG41089> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Aluno> ,
+                                                                          <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#frequenta> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> ,
+                                                                                                                                    <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#email> "PG41089@alunos.uminho.pt"^^xsd:string ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#ident> "PG41089"^^xsd:string ;
+                                                                 <http://www.semanticweb.org/xekster/ontologies/2020/UCS#nome> "Miguel Dias"^^xsd:string .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#UC> ;
+                                                             <http://www.semanticweb.org/xekster/ontologies/2020/UCS#éFrequentadaPor> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A33524> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A61032> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A63129> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A67713> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A70922> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A71385> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A71940> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A72187> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74036> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74264> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74568> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74658> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75328> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75411> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75536> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75569> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A76516> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A77045> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A78764> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A78914> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A78997> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A79947> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A80424> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A80757> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A80874> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A81712> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A82324> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A82617> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG17918> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG33874> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG37149> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG38415> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG39292> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG41089> ;
+                                                             <http://www.semanticweb.org/xekster/ontologies/2020/UCS#éLecionadaPor> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#prh> .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#jcr
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#jcr> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ,
+                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Professor> ;
+                                                             <http://www.semanticweb.org/xekster/ontologies/2020/UCS#leciona> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#prh
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#prh> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Pessoa> ,
+                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#Professor> ;
+                                                             <http://www.semanticweb.org/xekster/ontologies/2020/UCS#leciona> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#gcs> .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri
+<http://www.semanticweb.org/xekster/ontologies/2020/UCS#pri> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#UC> ;
+                                                             <http://www.semanticweb.org/xekster/ontologies/2020/UCS#éFrequentadaPor> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A33524> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A61032> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A63129> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A67713> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A70922> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A71385> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A71940> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A72187> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74036> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74264> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74568> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A74658> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75328> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75411> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75536> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A75569> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A76516> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A77045> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A78764> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A78914> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A78997> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A79947> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A80424> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A80757> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A80874> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A81712> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A82324> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#A82617> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG17918> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG33874> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG37149> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG38415> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG39292> ,
+                                                                                                                                      <http://www.semanticweb.org/xekster/ontologies/2020/UCS#PG41089> ;
+                                                             <http://www.semanticweb.org/xekster/ontologies/2020/UCS#éLecionadaPor> <http://www.semanticweb.org/xekster/ontologies/2020/UCS#jcr> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
