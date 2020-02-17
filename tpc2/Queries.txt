@@ -1,0 +1,39 @@
+// Nomes dos compositores por ordem alfabetica
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX : <http://www.semanticweb.org/xekster/ontologies/2020/arquivoMusical#>
+select ?comp where { 
+    ?id a :Obra.
+    ?id :compositor ?comp
+}order by asc(UCASE(str(?comp)))
+
+// Titulos das obras do tipo marcha de desfile
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX : <http://www.semanticweb.org/xekster/ontologies/2020/arquivoMusical#>
+select ?tit where { 
+    ?id a :Obra.
+    ?id :tipo "Marcha de Desfile".
+    ?id :titulo ?tit
+}
+
+// Para cada obra, quantas partituras
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX : <http://www.semanticweb.org/xekster/ontologies/2020/arquivoMusical#>
+select ?id(COUNT(?part) AS ?particoes) where { 
+    ?id a :Obra.
+    ?id :contem ?inst.
+    ?inst :partitura ?part
+}Group by ?id
+
+//Titulos das obras com bombo
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX : <http://www.semanticweb.org/xekster/ontologies/2020/arquivoMusical#>
+select ?tit where { 
+    ?id a :Obra.
+    ?id :titulo ?tit. 
+    ?id :contem ?inst.
+    ?inst :designação "Bombo"
+}
