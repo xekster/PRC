@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/xekster/PRI/aula4/PRI2019-A78914-T3/PR.dtd">
+<pr>
+    <meta>
+        <keyname>PRC2020-A78914-T3</keyname>
+        <title>Servidor para Lista de Obras e Partituras</title>
+        <bdate>24-02-2020</bdate>
+        <edate>02-03-2020</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>a78914</identifier>
+            <name>Ricardo Rodrigues Martins</name>
+            <email>a78914@alunos.uminho.pt</email>
+            <photo path="ricardo.jpg"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            O trabalho contém uma interface web que permite fazer queries <b>Sparql</b> a uma base de dados <b>GraphDB</b>, sendo possível aceder tanto a uma lista de obras,
+            como a páginas individuais para cada página referentes às suas partituras.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xml">PR.xml</deliverable>
+        <deliverable path="routes/index.js">Router da lista de obras</deliverable>
+        <deliverable path="routes/single.js">Router da lista de partituras de cada obra</deliverable>
+    </deliverables>
+</pr>

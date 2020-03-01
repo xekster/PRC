@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Lista de Partituras
+  .w3-container
+    table.w3-table
+      tr
+        th ID
+        th Descrição
+      each o in obras
+        tr
+          td= o.id
+          td= o.des
