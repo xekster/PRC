@@ -1,0 +1,12 @@
+select distinct ?name ?gender ?bdate ?bplace ?abstract where{
+   ?swim a dbo:Swimmer.
+   ?swim foaf:name ?name.
+   ?swim foaf:gender ?gender.
+   ?swim dbo:birthDate ?bdate.
+   optional {
+       ?swim dbo:birthPlace ?bplace.
+       ?swim dbo:deathDate ?ddate.
+       ?swim dbo:abstract ?abstract.
+   }
+   FILTER (lang(?abstract) = 'en')j
+}
