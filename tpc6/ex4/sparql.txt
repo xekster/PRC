@@ -1,0 +1,41 @@
+1:
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.chalkos.net/ontologies/2015/pokemon#>
+
+select ?num ?name ?type where {
+	?p a :Pokemon.
+	?p :Name ?name.
+    filter(lang(?name) = 'en').
+    ?p :Number ?num.
+    ?p :HasType ?type
+} 
+
+2:
+
+select (count (distinct ?p) as ?count) where {
+	?p a :Pokemon.
+} 
+
+3:
+
+select ?p ?evo where {
+    ?p a :Pokemon.
+    ?p :Number 5.
+	?evo :EvolvesTo ?p
+}
+
+4:
+
+select distinct ?type where {
+    ?p a :Pokemon.
+    ?p :HasType ?type
+}
+
+5:
+
+select distinct ?type (count (?p) as ?count) where {
+    ?p a :Pokemon.
+    ?p :HasType ?type
+} group by ?type

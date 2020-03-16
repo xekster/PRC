@@ -1,0 +1,34 @@
+1:
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/xekster/ontologies/compras#>
+select ?p ?l where {
+      ?p a :Produto.
+      ?l a :Loja.
+      ?l :vende ?p
+} 
+
+2:
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/xekster/ontologies/compras#>
+select ?p ?c where {
+      ?p a :Produto.
+      ?c a :Cliente.
+      ?c :compra ?p
+} 
+
+3:
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/xekster/ontologies/compras#>
+select ?l ?c where {
+    ?p a :Produto.
+    ?c a :Cliente.
+    ?l a :Loja.	  
+    ?c :compra ?p.
+    ?l :vende ?p.
+} 

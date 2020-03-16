@@ -1,0 +1,33 @@
+1:
+
+select (count(distinct ?c) as ?count) where {
+?c a dbo:Country.
+}
+
+2:
+
+select ?p where {
+?p a dbo:Person.
+?p dbo:birthPlace dbr:Barbados.
+}
+
+3:
+
+select ?p where {
+?p a dbo:Person.
+?p a dbo:Cricketer.
+?p dbo:birthPlace dbr:Barbados.
+}
+
+4:
+select count (distinct ?p) as ?count where {
+?p a dbo:Person.
+?p a dbo:Actor.
+}
+
+5:
+select distinct ?f where {
+  ?a a dbo:Person.
+  ?a foaf:name "Christopher Lambert"@en .
+  ?f dbo:starring ?a.
+}

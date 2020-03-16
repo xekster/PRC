@@ -1,0 +1,209 @@
+@prefix : <http://www.semanticweb.org/xekster/ontologies/compras#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/xekster/ontologies/compras> .
+
+<http://www.semanticweb.org/xekster/ontologies/compras> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#compra
+:compra rdf:type owl:ObjectProperty ;
+        owl:inverseOf :éCompradoPor .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#vende
+:vende rdf:type owl:ObjectProperty ;
+       owl:inverseOf :éVendidoPor .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#éCompradoPor
+:éCompradoPor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#éVendidoPor
+:éVendidoPor rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#Cliente
+:Cliente rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#Loja
+:Loja rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#LojaGrande
+:LojaGrande rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#Produto
+:Produto rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#Ana
+:Ana rdf:type owl:NamedIndividual ,
+              :Cliente ;
+     :compra :arroz ,
+             :bife ,
+             :calças .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#Bazar_Do_Quim
+:Bazar_Do_Quim rdf:type owl:NamedIndividual ,
+                        :Loja ;
+               :vende :brincos ,
+                      :calças ,
+                      :camisa .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#Continente
+:Continente rdf:type owl:NamedIndividual ,
+                     :Loja ,
+                     :LojaGrande ;
+            :vende :arroz ,
+                   :esfregona ,
+                   :maçã .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#José
+:José rdf:type owl:NamedIndividual ,
+               :Cliente ;
+      :compra :arroz ,
+              :azeite ,
+              :calças .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#João
+:João rdf:type owl:NamedIndividual ,
+               :Cliente ;
+      :compra :brincos ,
+              :esfregona .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#Loja_Dos_300
+:Loja_Dos_300 rdf:type owl:NamedIndividual ,
+                       :Loja ;
+              :vende :brincos ,
+                     :papel .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#Manuel
+:Manuel rdf:type owl:NamedIndividual ,
+                 :Cliente ;
+        :compra :maçã ,
+                :papel .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#Maria
+:Maria rdf:type owl:NamedIndividual ,
+                :Cliente ;
+       :compra :camisa ,
+               :sardinha .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#Pingo_Doce
+:Pingo_Doce rdf:type owl:NamedIndividual ,
+                     :Loja ,
+                     :LojaGrande ;
+            :vende :arroz ,
+                   :esfregona ,
+                   :sardinha .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#Talho_Barroso
+:Talho_Barroso rdf:type owl:NamedIndividual ,
+                        :Loja ;
+               :vende :azeite ,
+                      :bife .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#arroz
+:arroz rdf:type owl:NamedIndividual ,
+                :Produto ;
+       :éCompradoPor :Ana ,
+                     :José ;
+       :éVendidoPor :Continente ,
+                    :Pingo_Doce .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#azeite
+:azeite rdf:type owl:NamedIndividual ,
+                 :Produto ;
+        :éCompradoPor :José ;
+        :éVendidoPor :Talho_Barroso .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#bife
+:bife rdf:type owl:NamedIndividual ,
+               :Produto ;
+      :éCompradoPor :Ana ;
+      :éVendidoPor :Talho_Barroso .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#brincos
+:brincos rdf:type owl:NamedIndividual ,
+                  :Produto ;
+         :éCompradoPor :João ;
+         :éVendidoPor :Bazar_Do_Quim ,
+                      :Loja_Dos_300 .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#calças
+:calças rdf:type owl:NamedIndividual ,
+                 :Produto ;
+        :éCompradoPor :Ana ,
+                      :José ;
+        :éVendidoPor :Bazar_Do_Quim .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#camisa
+:camisa rdf:type owl:NamedIndividual ,
+                 :Produto ;
+        :éCompradoPor :Maria ;
+        :éVendidoPor :Bazar_Do_Quim .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#esfregona
+:esfregona rdf:type owl:NamedIndividual ,
+                    :Produto ;
+           :éCompradoPor :João ;
+           :éVendidoPor :Continente ,
+                        :Pingo_Doce .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#maçã
+:maçã rdf:type owl:NamedIndividual ,
+               :Produto ;
+      :éCompradoPor :Manuel ;
+      :éVendidoPor :Continente .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#papel
+:papel rdf:type owl:NamedIndividual ,
+                :Produto ;
+       :éCompradoPor :Manuel ;
+       :éVendidoPor :Loja_Dos_300 .
+
+
+###  http://www.semanticweb.org/xekster/ontologies/compras#sardinha
+:sardinha rdf:type owl:NamedIndividual ,
+                   :Produto ;
+          :éCompradoPor :Maria ;
+          :éVendidoPor :Pingo_Doce .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
