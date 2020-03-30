@@ -1,0 +1,58 @@
+# Inserção da prop nome
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX : <http://www.di.uminho.pt/prc2020/2020/2/cinema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+INSERT DATA {
+    :nome rdf:type owl:DatatypeProperty
+}
+
+
+# Adição do tipo Ator e do nome ao ator
+
+PREFIX : <http://www.di.uminho.pt/prc2020/2020/2/cinema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+CONSTRUCT { ?ator :nome ?anome .
+    		?ator rdf:type :Ator.
+          }
+WHERE { 
+    ?ator :atuou [] .
+    BIND (REPLACE(STRAFTER(STR(?ator), 'cinema#'), "_", " ") AS ?anome).
+}
+
+
+# Adição do tipo AtorMasculino
+
+PREFIX : <http://www.di.uminho.pt/prc2020/2020/2/cinema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+CONSTRUCT { ?ator rdf:type :AtorMasculino.
+    		
+          }
+WHERE { 
+    ?ator a :Ator .
+    ?ator :sexo "M" .
+}
+
+
+
+# Atores que não estão associados a nenhum personagem
+
+PREFIX : <http://www.di.uminho.pt/prc2020/2020/2/cinema#>
+SELECT ?s WHERE{
+    ?s :atuou ?f.
+    filter(not exists {?s :representa ?p})
+}
+
+
+# LongaMetragem
+
+PREFIX : <http://www.di.uminho.pt/prc2020/2020/2/cinema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+construct {
+    ?f a :LongaMetragem .
+} where {
+    ?f a :Filme .
+    ?f :duração ?d .
+    filter(?d > 120) .
+}

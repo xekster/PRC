@@ -1,0 +1,765 @@
+@prefix : <http://www.di.uminho.pt/prc2020/2020/2/cinema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Volver a :LongaMetragem .
+
+:Mad_Max__Fury_Road a :LongaMetragem .
+
+:Mystery_Men a :LongaMetragem .
+
+:The_Social_Network a :LongaMetragem .
+
+:Head_in_the_Clouds a :LongaMetragem .
+
+:The_Intern a :LongaMetragem .
+
+:Bringing_Out_the_Dead a :LongaMetragem .
+
+:Blindness a :LongaMetragem .
+
+:mother_ a :LongaMetragem .
+
+:Catch_22 a :LongaMetragem .
+
+:Midnight_Express a :LongaMetragem .
+
+:Color_of_Night a :LongaMetragem .
+
+:Hotel_Rwanda a :LongaMetragem .
+
+:The_Hypnotist a :LongaMetragem .
+
+:Battle_of_the_Sexes a :LongaMetragem .
+
+:Ironclad a :LongaMetragem .
+
+:Shot_Caller a :LongaMetragem .
+
+:Good_Morning__Vietnam a :LongaMetragem .
+
+:Girls_Trip a :LongaMetragem .
+
+:Mandy a :LongaMetragem .
+
+:Always a :LongaMetragem .
+
+:Ocean_s_Thirteen a :LongaMetragem .
+
+:Pride a :LongaMetragem .
+
+:The_Million_Dollar_Hotel a :LongaMetragem .
+
+:The_Other_Side_of_the_Wind a :LongaMetragem .
+
+:Glory a :LongaMetragem .
+
+:The_Homesman a :LongaMetragem .
+
+:Downton_Abbey a :LongaMetragem .
+
+:Shakespeare_in_Love a :LongaMetragem .
+
+:Twilight a :LongaMetragem .
+
+:No_Country_for_Old_Men a :LongaMetragem .
+
+:The_Dark_Half a :LongaMetragem .
+
+:The_Fighting_Temptations a :LongaMetragem .
+
+:Steve_Jobs a :LongaMetragem .
+
+:Running_Scared a :LongaMetragem .
+
+:In_the_Heart_of_the_Sea a :LongaMetragem .
+
+:The_Equalizer_2 a :LongaMetragem .
+
+:War_of_the_Arrows a :LongaMetragem .
+
+:Angel_Has_Fallen a :LongaMetragem .
+
+:American_Beauty a :LongaMetragem .
+
+:The_Flu a :LongaMetragem .
+
+:The_Exorcism_of_Emily_Rose a :LongaMetragem .
+
+:Indiana_Jones_and_the_Kingdom_of_the_Crystal_Skull a :LongaMetragem .
+
+:The_Matrix_Revisited a :LongaMetragem .
+
+:A_River_Runs_Through_It a :LongaMetragem .
+
+:My_Sassy_Girl a :LongaMetragem .
+
+:Frida a :LongaMetragem .
+
+:Sicario__Day_of_the_Soldado a :LongaMetragem .
+
+:Loving a :LongaMetragem .
+
+:Possession a :LongaMetragem .
+
+:Secretariat a :LongaMetragem .
+
+:What_Happened_to_Monday a :LongaMetragem .
+
+:Only_Lovers_Left_Alive a :LongaMetragem .
+
+:Blues_Brothers_2000 a :LongaMetragem .
+
+:Frankenstein a :LongaMetragem .
+
+:Warcraft a :LongaMetragem .
+
+:Chariots_of_Fire a :LongaMetragem .
+
+:Private_Life a :LongaMetragem .
+
+:Pushing_Tin a :LongaMetragem .
+
+:The_French_Lieutenant_s_Woman a :LongaMetragem .
+
+:Elizabeth a :LongaMetragem .
+
+:The_Guernsey_Literary___Potato_Peel_Pie_Society a :LongaMetragem .
+
+:After_the_Wedding a :LongaMetragem .
+
+:Shooter a :LongaMetragem .
+
+:Quincy a :LongaMetragem .
+
+:Jupiter_Ascending a :LongaMetragem .
+
+:Sansho_the_Bailiff a :LongaMetragem .
+
+:Nymphomaniac__Vol__II a :LongaMetragem .
+
+:The_Twilight_Saga__Eclipse a :LongaMetragem .
+
+:Sunny a :LongaMetragem .
+
+:The_Best_Exotic_Marigold_Hotel a :LongaMetragem .
+
+:Operation_Finale a :LongaMetragem .
+
+:Prometheus a :LongaMetragem .
+
+:Stepmom a :LongaMetragem .
+
+:The_Professor_and_the_Madman a :LongaMetragem .
+
+:The_Empire_Strikes_Back a :LongaMetragem .
+
+:Allied a :LongaMetragem .
+
+:Bad_Boys_for_Life a :LongaMetragem .
+
+:Quills a :LongaMetragem .
+
+:Ordinary_People a :LongaMetragem .
+
+:Pleasantville a :LongaMetragem .
+
+:Jurassic_World a :LongaMetragem .
+
+:Captain_Marvel a :LongaMetragem .
+
+:Reindeer_Games a :LongaMetragem .
+
+:Monsieur_Verdoux a :LongaMetragem .
+
+:We_All_Loved_Each_Other_So_Much a :LongaMetragem .
+
+:Lucy_in_the_Sky a :LongaMetragem .
+
+:Martin_Eden a :LongaMetragem .
+
+:The_Spy_Who_Loved_Me a :LongaMetragem .
+
+:Harriet a :LongaMetragem .
+
+:South_Wind a :LongaMetragem .
+
+:The_Town a :LongaMetragem .
+
+:Confucius a :LongaMetragem .
+
+:About_Schmidt a :LongaMetragem .
+
+:Hart_s_War a :LongaMetragem .
+
+:Happy_as_Lazzaro a :LongaMetragem .
+
+:Silenced a :LongaMetragem .
+
+:The_Miser a :LongaMetragem .
+
+:3000_Miles_to_Graceland a :LongaMetragem .
+
+:The_Chaser a :LongaMetragem .
+
+:Last_Flag_Flying a :LongaMetragem .
+
+:Silent_Hill a :LongaMetragem .
+
+:All_the_King_s_Men a :LongaMetragem .
+
+:A_Quiet_Passion a :LongaMetragem .
+
+:Darkest_Hour a :LongaMetragem .
+
+:Ordet a :LongaMetragem .
+
+:Birds_of_Passage a :LongaMetragem .
+
+:Fear_Over_the_City a :LongaMetragem .
+
+:El_Kwayseen a :LongaMetragem .
+
+:Taps a :LongaMetragem .
+
+:Midnight_Run a :LongaMetragem .
+
+:The_Motorcycle_Diaries a :LongaMetragem .
+
+:P_S__I_Love_You a :LongaMetragem .
+
+:Four_Sisters_and_a_Wedding a :LongaMetragem .
+
+:Spy_Game a :LongaMetragem .
+
+:L_Eclisse a :LongaMetragem .
+
+:The_Cider_House_Rules a :LongaMetragem .
+
+:Tunnel a :LongaMetragem .
+
+:Snow_White_and_the_Huntsman a :LongaMetragem .
+
+:Se7en a :LongaMetragem .
+
+:Gods_of_Egypt a :LongaMetragem .
+
+:Ocean_s_Eleven a :LongaMetragem .
+
+:Good_Will_Hunting a :LongaMetragem .
+
+:Warsaw_44 a :LongaMetragem .
+
+:Selena a :LongaMetragem .
+
+:Domino a :LongaMetragem .
+
+:Guyver__Dark_Hero a :LongaMetragem .
+
+:The_Cotton_Club a :LongaMetragem .
+
+:Dragon_Blade a :LongaMetragem .
+
+:Outbreak a :LongaMetragem .
+
+:The_Expendables_3 a :LongaMetragem .
+
+:Loveless a :LongaMetragem .
+
+:Samson_and_Delilah a :LongaMetragem .
+
+:Amy a :LongaMetragem .
+
+:The_Interpreter a :LongaMetragem .
+
+:Fahrenheit_11or9 a :LongaMetragem .
+
+:Breakfast_on_Pluto a :LongaMetragem .
+
+:Die_Hard__With_a_Vengeance a :LongaMetragem .
+
+:Terminator__Dark_Fate a :LongaMetragem .
+
+:The_World_Is_Not_Enough a :LongaMetragem .
+
+:Something_s_Gotta_Give a :LongaMetragem .
+
+:Body_of_Lies a :LongaMetragem .
+
+:Our_Little_Sister a :LongaMetragem .
+
+:Dead_Poets_Society a :LongaMetragem .
+
+:Torn_Curtain a :LongaMetragem .
+
+:Live_Free_or_Die_Hard a :LongaMetragem .
+
+:Mortal_Engines a :LongaMetragem .
+
+:Twelve_Monkeys a :LongaMetragem .
+
+:The_Grapes_of_Wrath a :LongaMetragem .
+
+:The_Quiet_Man a :LongaMetragem .
+
+:Spotlight a :LongaMetragem .
+
+:Live_by_Night a :LongaMetragem .
+
+:The_Invisible_Guardian a :LongaMetragem .
+
+:Pirates_of_the_Caribbean__Dead_Men_Tell_No_Tales a :LongaMetragem .
+
+:He_s_Just_Not_That_Into_You a :LongaMetragem .
+
+:Alice_in_Wonderland a :LongaMetragem .
+
+:Invasion a :LongaMetragem .
+
+:The_Matrix_Revolutions a :LongaMetragem .
+
+:Inside_Man a :LongaMetragem .
+
+:Conan_the_Barbarian a :LongaMetragem .
+
+:Spider_Man__Far_from_Home a :LongaMetragem .
+
+:Stonewall a :LongaMetragem .
+
+:Kingsman__The_Secret_Service a :LongaMetragem .
+
+:Gorillas_in_the_Mist a :LongaMetragem .
+
+:Fellini_Satyricon a :LongaMetragem .
+
+:The_Twilight_Samurai a :LongaMetragem .
+
+:The_Grandmaster a :LongaMetragem .
+
+:Need_for_Speed a :LongaMetragem .
+
+:In_This_Corner_of_the_World a :LongaMetragem .
+
+:Hamlet a :LongaMetragem .
+
+:The_Book_of_Sun a :LongaMetragem .
+
+:GoldenEye a :LongaMetragem .
+
+:Spanglish a :LongaMetragem .
+
+:Iron_Man_3 a :LongaMetragem .
+
+:All_Things_Fair a :LongaMetragem .
+
+:La_Grande_Bouffe a :LongaMetragem .
+
+:A_Silent_Voice a :LongaMetragem .
+
+:Tomorrowland a :LongaMetragem .
+
+:The_Mummy_Returns a :LongaMetragem .
+
+:The_Reluctant_Fundamentalist a :LongaMetragem .
+
+:The_Prestige a :LongaMetragem .
+
+:My_King a :LongaMetragem .
+
+:Suburra a :LongaMetragem .
+
+:Sandy_Wexler a :LongaMetragem .
+
+:Bad_Genius a :LongaMetragem .
+
+:Captain_Corelli_s_Mandolin a :LongaMetragem .
+
+:The_Hurt_Locker a :LongaMetragem .
+
+:National_Treasure a :LongaMetragem .
+
+:Unforgiven a :LongaMetragem .
+
+:Mission__Impossible___Rogue_Nation a :LongaMetragem .
+
+:Tell_No_One a :LongaMetragem .
+
+:Memories_of_Murder a :LongaMetragem .
+
+:W_ a :LongaMetragem .
+
+:The_Heroes_of_Telemark a :LongaMetragem .
+
+:The_Big_Short a :LongaMetragem .
+
+:The_Last_Castle a :LongaMetragem .
+
+:The_Fugitive a :LongaMetragem .
+
+:The_Battleship_Island a :LongaMetragem .
+
+:Everybody_Knows a :LongaMetragem .
+
+:The_Traitor a :LongaMetragem .
+
+:Michael_Collins a :LongaMetragem .
+
+:Day_Watch a :LongaMetragem .
+
+:The_Great_Raid a :LongaMetragem .
+
+:John_Carter a :LongaMetragem .
+
+:The_Equalizer a :LongaMetragem .
+
+:For_a_Few_Dollars_More a :LongaMetragem .
+
+:Riding_in_Cars_with_Boys a :LongaMetragem .
+
+:Journey_to_the_Center_of_the_Earth a :LongaMetragem .
+
+:Star_Trek_Into_Darkness a :LongaMetragem .
+
+:Bone_Tomahawk a :LongaMetragem .
+
+:V_for_Vendetta a :LongaMetragem .
+
+:The_Magnificent_Seven a :LongaMetragem .
+
+:Van_Helsing a :LongaMetragem .
+
+:The_Prince_of_Tides a :LongaMetragem .
+
+:All_the_Money_in_the_World a :LongaMetragem .
+
+:Cut_Throat_City a :LongaMetragem .
+
+:The_Bounty a :LongaMetragem .
+
+:Richard_Jewell a :LongaMetragem .
+
+:American_Sniper a :LongaMetragem .
+
+:Licence_to_Kill a :LongaMetragem .
+
+:Red_River a :LongaMetragem .
+
+:Only_the_Brave a :LongaMetragem .
+
+:Mission__Impossible___Ghost_Protocol a :LongaMetragem .
+
+:To_Live a :LongaMetragem .
+
+:Legends_of_the_Fall a :LongaMetragem .
+
+:The_Wizard_of_Lies a :LongaMetragem .
+
+:Hush____Hush__Sweet_Charlotte a :LongaMetragem .
+
+:Thirst a :LongaMetragem .
+
+:The_Hustler a :LongaMetragem .
+
+:Princess_Mononoke a :LongaMetragem .
+
+:Hostiles a :LongaMetragem .
+
+:First_Knight a :LongaMetragem .
+
+:Little_Women a :LongaMetragem .
+
+:You_Don_t_Know_Jack a :LongaMetragem .
+
+:Beanpole a :LongaMetragem .
+
+:A_Beautiful_Mind a :LongaMetragem .
+
+:The_Scarlet_Letter a :LongaMetragem .
+
+:The_Robe a :LongaMetragem .
+
+:Tin_Cup a :LongaMetragem .
+
+:Waves a :LongaMetragem .
+
+:Return_of_the_Jedi a :LongaMetragem .
+
+:The_Connection a :LongaMetragem .
+
+:The_Boat_That_Rocked a :LongaMetragem .
+
+:The_New_World a :LongaMetragem .
+
+:Pandora a :LongaMetragem .
+
+:Coach_Carter a :LongaMetragem .
+
+:Valerian_and_the_City_of_a_Thousand_Planets a :LongaMetragem .
+
+:Uncut_Gems a :LongaMetragem .
+
+:Just_Mercy a :LongaMetragem .
+
+:The_Core a :LongaMetragem .
+
+:The_Amazing_Spider_Man a :LongaMetragem .
+
+:The_12th_Man a :LongaMetragem .
+
+:Captain_America__The_Winter_Soldier a :LongaMetragem .
+
+:The_Rock a :LongaMetragem .
+
+:Logan a :LongaMetragem .
+
+:The_Alamo a :LongaMetragem .
+
+:Third_Person a :LongaMetragem .
+
+:The_Master a :LongaMetragem .
+
+:Airport a :LongaMetragem .
+
+:Master_and_Commander__The_Far_Side_of_the_World a :LongaMetragem .
+
+:Romeo_and_Juliet a :LongaMetragem .
+
+:FaceorOff a :LongaMetragem .
+
+:The_Fisher_King a :LongaMetragem .
+
+:The_Matrix_Reloaded a :LongaMetragem .
+
+:Manchester_by_the_Sea a :LongaMetragem .
+
+:Shutter_Island a :LongaMetragem .
+
+:The_Age_of_Innocence a :LongaMetragem .
+
+:Bitter_Moon a :LongaMetragem .
+
+:Open_Range a :LongaMetragem .
+
+:Little_Big_Man a :LongaMetragem .
+
+:Kiss_Me_Again a :LongaMetragem .
+
+:Ossessione a :LongaMetragem .
+
+:Maurice a :LongaMetragem .
+
+:The_Doors a :LongaMetragem .
+
+:Greed a :LongaMetragem .
+
+:Apollo_13 a :LongaMetragem .
+
+:Den_of_Thieves a :LongaMetragem .
+
+:Star_Wars__Episode_III___Revenge_of_the_Sith a :LongaMetragem .
+
+:The_Lost_City_of_Z a :LongaMetragem .
+
+:Live_and_Become a :LongaMetragem .
+
+:Ash_Is_Purest_White a :LongaMetragem .
+
+:Nobody_Knows a :LongaMetragem .
+
+:Clear_and_Present_Danger a :LongaMetragem .
+
+:True_Lies a :LongaMetragem .
+
+:The_Pelican_Brief a :LongaMetragem .
+
+:Leviathan a :LongaMetragem .
+
+:Kingsman__The_Golden_Circle a :LongaMetragem .
+
+:The_Flight_of_the_Phoenix a :LongaMetragem .
+
+:Zorba_the_Greek a :LongaMetragem .
+
+:On_Her_Majesty_s_Secret_Service a :LongaMetragem .
+
+:The_Shawshank_Redemption a :LongaMetragem .
+
+:Primary_Colors a :LongaMetragem .
+
+:Pirates_of_the_Caribbean__The_Curse_of_the_Black_Pearl a :LongaMetragem .
+
+:Topaz a :LongaMetragem .
+
+:Man_of_Steel a :LongaMetragem .
+
+:Greystoke__The_Legend_of_Tarzan__Lord_of_the_Apes a :LongaMetragem .
+
+:Marley a :LongaMetragem .
+
+:The_Devil_s_Advocate a :LongaMetragem .
+
+:Aquaman a :LongaMetragem .
+
+:Maze_Runner__The_Death_Cure a :LongaMetragem .
+
+:Cinderella_Man a :LongaMetragem .
+
+:X_Men__Apocalypse a :LongaMetragem .
+
+:Thirteen_Days a :LongaMetragem .
+
+:The_Handmaiden a :LongaMetragem .
+
+:Strange_Days a :LongaMetragem .
+
+:The_Hurricane a :LongaMetragem .
+
+:Memoirs_of_a_Geisha a :LongaMetragem .
+
+:Birdman_of_Alcatraz a :LongaMetragem .
+
+:Spielberg a :LongaMetragem .
+
+:The_Girl_Who_Kicked_the_Hornet_s_Nest a :LongaMetragem .
+
+:Into_the_Wild a :LongaMetragem .
+
+:The_Lone_Ranger a :LongaMetragem .
+
+:Transformers__The_Last_Knight a :LongaMetragem .
+
+:The_Sacrifice a :LongaMetragem .
+
+:Avengers__Infinity_War a :LongaMetragem .
+
+:Exodus__Gods_and_Kings a :LongaMetragem .
+
+:The_Square a :LongaMetragem .
+
+:Ray a :LongaMetragem .
+
+:The_Girl_with_the_Dragon_Tattoo a :LongaMetragem .
+
+:Ford_v_Ferrari a :LongaMetragem .
+
+:Star_Wars__The_Last_Jedi a :LongaMetragem .
+
+:The_Wages_of_Fear a :LongaMetragem .
+
+:Inglourious_Basterds a :LongaMetragem .
+
+:Apocalypse_Now a :LongaMetragem .
+
+:Prisoners a :LongaMetragem .
+
+:The_Last_Samurai a :LongaMetragem .
+
+:The_Firm a :LongaMetragem .
+
+:Peterloo a :LongaMetragem .
+
+:The_Wailing a :LongaMetragem .
+
+:Boogie_Nights a :LongaMetragem .
+
+:Lust__Caution a :LongaMetragem .
+
+:Les_Mis_rables a :LongaMetragem .
+
+:Fitzcarraldo a :LongaMetragem .
+
+:Hatari_ a :LongaMetragem .
+
+:Bahubali__The_Beginning a :LongaMetragem .
+
+:Nashville a :LongaMetragem .
+
+:Gangs_of_Wasseypur___Part_1 a :LongaMetragem .
+
+:The_Hobbit__The_Desolation_of_Smaug a :LongaMetragem .
+
+:Zeitgeist__Moving_Forward a :LongaMetragem .
+
+:Enter_the_Void a :LongaMetragem .
+
+:The_Godfather__Part_III a :LongaMetragem .
+
+:American_Honey a :LongaMetragem .
+
+:Watchmen a :LongaMetragem .
+
+:It_s_a_Mad__Mad__Mad__Mad_World a :LongaMetragem .
+
+:Australia a :LongaMetragem .
+
+:Gangs_of_New_York a :LongaMetragem .
+
+:It_Chapter_Two a :LongaMetragem .
+
+:Pirates_of_the_Caribbean__At_World_s_End a :LongaMetragem .
+
+:Scarface a :LongaMetragem .
+
+:Voyage_of_the_Unicorn a :LongaMetragem .
+
+:Ratsasan a :LongaMetragem .
+
+:The_Aviator a :LongaMetragem .
+
+:Around_the_World_in_Eighty_Days a :LongaMetragem .
+
+:The_Lord_of_the_Rings__The_Fellowship_of_the_Ring a :LongaMetragem .
+
+:Dogville a :LongaMetragem .
+
+:Rocco_and_His_Brothers a :LongaMetragem .
+
+:Blue_Is_the_Warmest_Color a :LongaMetragem .
+
+:Bound_by_Honor a :LongaMetragem .
+
+:Fiddler_on_the_Roof a :LongaMetragem .
+
+:El_Cid a :LongaMetragem .
+
+:Pearl_Harbor a :LongaMetragem .
+
+:Andrei_Rublev a :LongaMetragem .
+
+:King_Kong a :LongaMetragem .
+
+:The_Hateful_Eight a :LongaMetragem .
+
+:The_Wild_Pear_Tree a :LongaMetragem .
+
+:Nixon a :LongaMetragem .
+
+:Schindler_s_List a :LongaMetragem .
+
+:Winter_Sleep a :LongaMetragem .
+
+:Intolerance__Love_s_Struggle_Throughout_the_Ages a :LongaMetragem .
+
+:The_Godfather__Part_II a :LongaMetragem .
+
+:Seven_Samurai a :LongaMetragem .
+
+:War_and_Peace a :LongaMetragem .
+
+:The_Irishman a :LongaMetragem .
+
+:Kabhi_Khushi_Kabhie_Gham a :LongaMetragem .
+
+:Lawrence_of_Arabia a :LongaMetragem .
+
+:Lagaan__Once_Upon_a_Time_in_India a :LongaMetragem .
+
+:Anne_of_Green_Gables__The_Sequel a :LongaMetragem .
+
+:Hamlet a :LongaMetragem .
+
+:The_Kingdom a :LongaMetragem .

@@ -1,0 +1,34 @@
+select (count(?s) as ?movies) where {
+    ?s a :Filme .
+}
+
+PREFIX : <http://www.di.uminho.pt/prc2020/2020/2/cinema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select (count(distinct ?a) as ?numAtors) where {
+    ?a rdf:type :Pessoa.
+    ?f rdf:type :Filme.
+    ?a :atuou ?f .
+}
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.di.uminho.pt/prc2020/2020/2/cinema#>
+select (count(distinct ?a) as ?pers) where {
+    ?a rdf:type :Personagem.
+}
+
+PREFIX : <http://www.di.uminho.pt/prc2020/2020/2/cinema#>
+select (count(distinct ?p) as ?paises) where {
+    ?p a :País.
+}
+
+PREFIX : <http://www.di.uminho.pt/prc2020/2020/2/cinema#>
+select (count(distinct ?p) as ?linguas) where {
+    ?p a :Língua.
+}
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.di.uminho.pt/prc2020/2020/2/cinema#>
+select (count(?g) as ?generos) where {
+        ?g rdf:type :Género.
+    }
