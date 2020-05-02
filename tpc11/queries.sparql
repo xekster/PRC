@@ -1,0 +1,55 @@
+PREFIX : <http://www.di.uminho.pt/prc2020/familyTree#>
+
+#TIOS
+select ?tio ?pai ?filho where {
+    ?tio :sex "M".
+    ?tio :hasSibling ?pai.
+    ?pai :hasChild ?filho.
+}
+
+#primos
+
+PREFIX : <http://www.di.uminho.pt/prc2020/familyTree#>
+select ?tio ?pai ?filho ?primo where {
+    ?tio :hasSibling ?pai.
+    ?pai :hasChild ?filho.
+    ?tio :hasChild ?primo
+}
+
+#ancestrais
+
+PREFIX : <http://www.di.uminho.pt/prc2020/familyTree#>
+select ?pessoa ?ancestral where {
+    ?pessoa (:hasParent)+ ?ancestral.
+}
+
+#descendentes
+
+PREFIX : <http://www.di.uminho.pt/prc2020/familyTree#>
+select ?pessoa ?ancestral where {
+    ?pessoa (:hasChild)+ ?ancestral.
+}
+
+#cunhados
+
+PREFIX : <http://www.di.uminho.pt/prc2020/familyTree#>
+select ?a ?b ?cunh  where {
+    ?a :sex ?asex.
+    ?a :hasChild ?child.
+    ?b :hasChild ?child.
+    bind (if(?asex = 'M', 'F','M') as ?bsex)
+    ?b :sex ?bsex.
+ 	?b :hasSibling ?cunh.
+}
+
+#sogros
+
+PREFIX : <http://www.di.uminho.pt/prc2020/familyTree#>
+select ?a ?b ?sogro where {
+    ?a :sex ?asex.
+    ?a :hasChild ?child.
+    ?b :hasChild ?child.
+    bind (if(?asex = 'M', 'F','M') as ?bsex)
+    ?b :sex ?bsex.
+ 	?b :hasParent ?sogro.
+}
